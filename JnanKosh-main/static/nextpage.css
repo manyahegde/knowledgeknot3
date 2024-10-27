@@ -1,0 +1,572 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc; /* Light background */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #3f51b5; /* Primary dark blue color */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.mic-btn {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.mic-btn:hover {
+    background-color: #303f9f;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #e0f7fa; /* Light teal */
+}
+
+.feature-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.feature-card img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.learn-more {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #e91e63;
+}
+
+/* Explore Categories Section */
+.categories {
+    background-color: #f0f4f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 2.5em;
+    color: #3f51b5;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(135deg, #3f51b5, #ff4081);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.category-item {
+    background-color: #e0f7fa; /* Light teal */
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.arrow-container{
+     /* Primary dark blue color */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    font-size: 3.2em;
+    margin-bottom: 30px;
+    
+}
+.category-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.category-item h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #3f51b5;
+}
+
+.category-item button.learn-more {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category-item button.learn-more:hover {
+    background-color: #e91e63;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%;
+    }
+
+    .mic-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+.mic-icon {
+    width: 20px; /* Set desired width */
+    height: 20px; /* Set desired height */
+    object-fit: contain; /* Keep aspect ratio */
+}
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between feature cards and search bar */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.mic-btn {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.feature-card {
+    text-align: center;
+}
+
+.feature-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.feature-image {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+}
+
+.feature-card h3 {
+    margin: 10px 0 5px;
+}
+
+.feature-card p {
+    margin: 0;
+}
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc; /* Light background */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #3f51b5; /* Primary dark blue color */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.mic-btn {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.mic-btn:hover {
+    background-color: #303f9f;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #e0f7fa; /* Light teal */
+}
+
+.feature-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.feature-card img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.learn-more {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #e91e63;
+}
+
+/* Explore Categories Section */
+.categories {
+    background-color: #f0f4f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 2.5em;
+    color: #3f51b5;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(135deg, #3f51b5, #ff4081);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.category-item {
+    background-color: #e0f7fa; /* Light teal */
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.arrow-container{
+     /* Primary dark blue color */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    font-size: 3.2em;
+    margin-bottom: 30px;
+    
+}
+.category-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.category-item h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #3f51b5;
+}
+
+.category-item button.learn-more {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category-item button.learn-more:hover {
+    background-color: #e91e63;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%;
+    }
+
+    .mic-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between elements */
+    padding: 20px; /* Add padding around the section */
+}
+
+.feature-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px; /* Set a fixed width for uniformity */
+    cursor: pointer;
+    text-align: center;
+}
+
+.feature-button {
+    background: none;
+    border: none;
+    padding: 0; /* Remove default padding */
+    cursor: pointer;
+    width: 100%; /* Make button full width */
+}
+
+.feature-image {
+    width: 50px; /* Adjust size of images */
+    height: 50px; /* Ensure uniformity */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+}
+
+.search-input {
+    padding: 10px;
+    width: 300px; /* Adjust width as needed */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.mic-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mic-icon {
+    width: 30px; /* Adjust size of mic icon */
+    height: 30px; /* Ensure uniformity */
+}
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Increased space between elements */
+    padding: 20px; /* Add padding around the section */
+}
+
+.feature-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px; /* More padding for better spacing */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 180px; /* Adjusted width for better visibility */
+    cursor: pointer;
+    text-align: center;
+}
+
+.feature-button {
+    background: none;
+    border: none;
+    padding: 0; /* Remove default padding */
+    cursor: pointer;
+    width: 100%; /* Make button full width */
+}
+
+.feature-image {
+    width: 70px; /* Increased size of images */
+    height: 70px; /* Ensure uniformity */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+}
+
+.search-input {
+    padding: 10px;
+    width: 300px; /* Adjust width as needed */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.mic-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mic-icon {
+    width: 30px; /* Adjust size of mic icon */
+    height: 30px; /* Ensure uniformity */
+}
+.feature-card {
+    padding: 20px; /* Keep padding for spacing */
+    border-radius: 10px;
+    box-shadow: none; /* Remove the shadow for a seamless look */
+    text-align: center;
+    width: 180px; /* Maintain the width for uniformity */
+    background-color: transparent; /* Make background transparent */
+    cursor: pointer;
+}
+

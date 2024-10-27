@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black;
+}
+
+.closed-captions-wrapper {
+  width: 100%;
+  position: absolute;
+  bottom: 20%;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  font-size: 18px;
+}
+
+.closed-captions-container {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+/* .gradient-text {
+  @apply bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text text-transparent;
+} */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text text-transparent;
+  line-height: 1.2;
+  padding-bottom: 0.2em;
+}

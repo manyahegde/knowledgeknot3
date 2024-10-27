@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Knot: Untangling Learning</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='nextpage.css') }}">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Knowledge Knot: Untangling Learning</h1>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-card left">
+            <button class="feature-button" onclick="location.href='#'">
+                <img src="mi.jpeg" alt="Voice Assistant" class="feature-image">
+                <h3>Voice Assistant</h3>
+                <p>Translate conversations in real-time.</p>
+            </button>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" placeholder="Search for topics..." class="search-input">
+            <button class="mic-btn">
+                <img src="mic.jpeg" alt="Mic Icon" class="mic-icon">
+            </button>
+        </div>
+        
+        <div class="feature-card right">
+            <button class="feature-button" onclick="location.href='#'">
+                <img src="r.jpeg" alt="Curated Resources" class="feature-image">
+                <h3>Curated Resources</h3>
+                <p>Organize materials from trusted sources.</p>
+            </button>
+        </div>
+    </section>
+
+    <!-- Explore Categories Section -->
+    <section class="categories" id="explore">
+        <h2>Explore Categories</h2>
+        <div class="category-grid">
+            <div class="category-item">
+                <img src="python.jpeg" alt="Python">
+                <h3>Python</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="machine_learning.jpeg" alt="Machine Learning">
+                <h3>Machine Learning</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="js.jpeg" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="wd.jpeg" alt="Web Development">
+                <h3>Web Development</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="ds.jpeg" alt="Data Science">
+                <h3>Data Science</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="cs.jpeg" alt="Cyber Security">
+                <h3>Cyber Security</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="cc.jpeg" alt="Cloud Computing">
+                <h3>Cloud Computing</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="ai.jpeg" alt="Artificial Intelligence">
+                <h3>Artificial Intelligence</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="da.jpeg" alt="Data Analysis">
+                <h3>Data Analysis</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="gd.jpeg" alt="Game Development">
+                <h3>Game Development</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="mad.jpeg" alt="Mobile App Development">
+                <h3>Mobile App Development</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="devops.jpeg" alt="DevOps">
+                <h3>DevOps</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="st.jpeg" alt="Software Testing">
+                <h3>Software Testing</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="bc.jpeg" alt="Blockchain Technology">
+                <h3>Blockchain Technology</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="iot.jpeg" alt="Internet of Things">
+                <h3>Internet of Things (IoT)</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="ro.jpeg" alt="Robotics">
+                <h3>Robotics</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="qc.jpeg" alt="Quantum Computing">
+                <h3>Quantum Computing</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="eh.jpeg" alt="Ethical Hacking">
+                <h3>Ethical Hacking</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="vr.jpeg" alt="Virtual Reality (VR)">
+                <h3>Virtual Reality (VR)</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="ar.jpeg" alt="Augmented Reality (AR)">
+                <h3>Augmented Reality (AR)</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="big.jpeg" alt="Big Data">
+                <h3>Big Data</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="nlp.jpeg" alt="Natural Language Processing (NLP)">
+                <h3>Natural Language Processing (NLP)</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="db.jpeg" alt="Database Management">
+                <h3>Database Management</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="em.jpeg" alt="Embedded Systems">
+                <h3>Embedded Systems</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="os.jpeg" alt="Operating Systems">
+                <h3>Operating Systems</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="hci.jpeg" alt="Human-Computer Interaction">
+                <h3>Human-Computer Interaction</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="dsa.jpeg" alt="Data Structures & Algorithms">
+                <h3>Data Structures & Algorithms</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="vi.jpeg" alt="Virtualization">
+                <h3>Virtualization</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="dsp.jpeg" alt="Digital Signal Processing">
+                <h3>Digital Signal Processing</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="mp.jpeg" alt="Microcontroller Programming">
+                <h3>Microcontroller Programming</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="net.jpeg" alt="Networking">
+                <h3>Networking</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="crypt.jpeg" alt="Cryptography">
+                <h3>Cryptography</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="category-item">
+                <img src="auto.jpeg" alt="Autonomous Systems">
+                <h3>Autonomous Systems</h3>
+                <button class="learn-more">Learn More</button>
+            </div>
+
+        </div>
+        
+        <div class="arrow-container">
+            <button class="arrow-btn" onclick="focusSearch()">&#8594; More</button>
+        </div>
+    </section>
+
+    <script>
+        function focusSearch() {
+            document.querySelector('.search-input').focus();
+        }
+    </script>
+
+</body>
+</html>
