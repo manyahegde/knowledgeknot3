@@ -7,9 +7,9 @@ import {
   VideoConference,
   formatChatMessageLinks,
 } from "@livekit/components-react";
-import { translate } from "google-translate-api-browser";
+import { setCORS } from "google-translate-api-browser";
 
-// const translate = setCORS("https://corsproxy.io/");
+const translate = setCORS("https://web-production-e6e0.up.railway.app/");
 
 import {
   LogLevel,
